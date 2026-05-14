@@ -1,0 +1,19 @@
+{
+  "name": "torti-skills",
+  "version": "1.0.0",
+  "description": "OpenClaw AI assistant - custom skills development",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "review": "clawsweeper review",
+    "health": "openclaw security audit --json",
+    "test": "echo 'Skills validation'",
+    "commit-review": "clawsweeper commit-reports"
+  },
+  "keywords": ["openclaw", "skills", "ai-assistant"],
+  "author": "Torti",
+  "license": "MIT",
+  "devDependencies": {
+    "@openclaw/clawsweeper": "github:openclaw/clawsweeper"
+  }
+}
