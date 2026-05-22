@@ -1,0 +1,35 @@
+# Ignore credentials and secrets
+credentials/
+*.key
+*.pem
+# Ignore logs
+*.log
+# Ignore cache
+.cache/
+# Ignore node_modules if any
+node_modules/
+# Ignore large media files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
+# Ignore temporary files
+*.tmp
+*.temp
+-e 
+# Ignore cloned repos (we have them on GitHub already)
+workspace/repos/
+workspace/projects/clawsweeper/
+workspace/projects/
+workspace/repos/
+completions/
+cron/
+devices/
+logs/
+skill-workshop/
+subagents/
+tasks/
+update-check.json
+.pnpm-store/

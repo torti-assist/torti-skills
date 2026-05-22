@@ -1,0 +1,19 @@
+plugin:
+  name: agency-operator
+  description: Manages Torti ClawSweeper configuration for issue triage, code review automation, and security boundaries.
+  config:
+    version: 1.0.0
+    project: torti-assistant
+    defaultBranch: main
+    enabledWorkflows:
+      - issue-classification
+      - code-review
+      - commit-validation
+      - spam-detection
+      - security-boundary
+    rules:
+      autoLabel: true
+      autoAssign: false
+      requireReview: true
+      blockSpam: true
+      enforceSecurityBoundary: true
