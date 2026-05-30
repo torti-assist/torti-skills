@@ -77,12 +77,27 @@ Update affected files with minimal diff (only rewrite what changes):
 | `reports/low-confidence.md` | low-certainty elements |
 | `reports/relationship-graph.md` | entity↔entity, entity↔concept links |
 | `inbox.md` | unclassified items (TTL: 1 cycle) |
+$
+### 3.5. Obsidian Sync
+Use obsidian-cli to ensure the vault reflects the extracted data by reading raw sources and updating relevant notes.
 
 Use Obsidian format (`[[wikilinks]]`, YAML frontmatter, tags `#concept` `#entity`).
 
 ### 4. Close
 - Update `last_run` in `AGENTS.md`
 - Append a summary to `AGENTS.md` > `run_log`: count of entities/concepts created or modified, contradictions found, run duration
+- Output a completion message to the user (for Discord announcement) with the detailed run statistics in the following format:
+  ```
+  Memory Agent Run Report
+  - Duration: {duration_ms}ms
+  - Entities created: {entities_created}
+  - Entities updated: {entities_updated}
+  - Concepts created: {concepts_created}
+  - Concepts updated: {concepts_updated}
+  - Contradictions found: {contradictions_found}
+  - Open questions found: {open_questions_found}
+  - Claims updated: {claims_updated}
+  ```
 
 ## Rules
 - Never modify `sources/` — read-only
