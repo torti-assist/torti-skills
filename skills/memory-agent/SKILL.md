@@ -4,7 +4,7 @@
 
 ## Vault Structure
 The memory agent operates on the main Obsidian vault located at:
-`/home/node/.openclaw/workspace/vault/`
+`/home/node/.openclaw/obsidian/`
 
 ```
 vault/
